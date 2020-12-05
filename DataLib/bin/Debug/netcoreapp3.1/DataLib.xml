@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataLib</name>
+    </assembly>
+    <members>
+        <member name="T:DataLib.Models.Product">
+            <summary>
+            Abstract class which represents Product
+            </summary>
+        </member>
+        <member name="P:DataLib.Models.Product.Amount">
+            <summary>
+            Amount of the product
+            </summary>
+        </member>
+        <member name="P:DataLib.Models.Product.Name">
+            <summary>
+            Name of the product
+            </summary>
+        </member>
+        <member name="P:DataLib.Models.Product.Price">
+            <summary>
+            Price of the product
+            </summary>
+        </member>
+        <member name="P:DataLib.Models.Product.Markup">
+            <summary>
+            Markup of the product
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.Product.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.Product.#ctor(System.String,System.UInt32,System.Decimal,System.Decimal)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name">Name of the product</param>
+            <param name="amount">Amount of ther product</param>
+            <param name="price">Price of the product</param>
+            <param name="markup">Markup of the product</param>
+        </member>
+        <member name="M:DataLib.Models.Product.GetUnitCost">
+            <summary>
+            Calculates unit cost
+            </summary>
+            <returns>Unit cost</returns>
+        </member>
+        <member name="M:DataLib.Models.Product.GetSummaryCost">
+            <summary>
+            Calculates summary cost
+            </summary>
+            <returns>Summary cost</returns>
+        </member>
+        <member name="M:DataLib.Models.Product.Equals(System.Object)">
+            <summary>
+            Determines whether the specified Product is equal to the current Product.
+            </summary>
+            <param name="obj">The Product to compare with the current Product.</param>
+            <returns>true if the specified Product is equal to the current Product; otherwise, false.</returns>
+        </member>
+        <member name="M:DataLib.Models.Product.GetHashCode">
+            <summary>
+            Serves as the default hash function.
+            </summary>
+            <returns>A hash code for the current Product.</returns>
+        </member>
+        <member name="M:DataLib.Models.Product.ToString">
+            <summary>
+            Returns a string that represents the current Product.
+            </summary>
+            <returns>A string that represents the current Product.</returns>
+        </member>
+        <member name="M:DataLib.Models.Product.op_Implicit(DataLib.Models.Product)~System.Int32">
+            <summary>
+            Overloaded implicit operator for casting product to integer
+            </summary>
+            <param name="p">Product</param>
+        </member>
+        <member name="M:DataLib.Models.Product.op_Implicit(DataLib.Models.Product)~System.Decimal">
+            <summary>
+            Overloaded implicit operator for castring product to decimal
+            </summary>
+            <param name="p">Product</param>
+        </member>
+        <member name="T:DataLib.Models.BakeryProduct">
+            <summary>
+            Class which represents Bakery product
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.#ctor(System.String,System.UInt32,System.Decimal,System.Decimal)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name">Name of the bakery product</param>
+            <param name="amount">Amount of the bakery product</param>
+            <param name="price">Price of the bakery product</param>
+            <param name="markup">Markup of the bakery product</param>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.op_Addition(DataLib.Models.BakeryProduct,DataLib.Models.BakeryProduct)">
+            <summary>
+            Overloaded operator+ for two bakery products
+            </summary>
+            <param name="bp1">First bakery product</param>
+            <param name="bp2">Second bakery product</param>
+            <returns>Resulting bakery product</returns>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.op_Subtraction(DataLib.Models.BakeryProduct,System.Int32)">
+            <summary>
+            Overloaded operator- for bakery product and integer
+            </summary>
+            <param name="bp">Bakery product</param>
+            <param name="value">Value which decrease amount</param>
+            <returns>Resultring bakery product</returns>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.op_Implicit(DataLib.Models.BakeryProduct)~DataLib.Models.ElectricalProduct">
+            <summary>
+            Overloaded implicit operator for castring bakery product to electrical produtct
+            </summary>
+            <param name="bp">Bakery product</param>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.op_Implicit(DataLib.Models.BakeryProduct)~System.Int32">
+            <summary>
+            Overloaded implicit operator for casting bakery product to integer
+            </summary>
+            <param name="bp">Bakery product</param>
+        </member>
+        <member name="M:DataLib.Models.BakeryProduct.op_Implicit(DataLib.Models.BakeryProduct)~System.Decimal">
+            <summary>
+            Overloaded implicit operator for castring bakery product to decimal
+            </summary>
+            <param name="bp">Bakery product</param>
+        </member>
+        <member name="T:DataLib.Models.ElectricalProduct">
+            <summary>
+            Class which represents electrical product
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.#ctor(System.String,System.UInt32,System.Decimal,System.Decimal)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name">Name of the electrical product</param>
+            <param name="amount">Amount of the electrical product</param>
+            <param name="price">Price of the electrical product</param>
+            <param name="markup">Markup of the electrical product</param>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.op_Addition(DataLib.Models.ElectricalProduct,DataLib.Models.ElectricalProduct)">
+            <summary>
+            Overloaded operator+ for two electrical products
+            </summary>
+            <param name="ep1">First electrical product</param>
+            <param name="ep2">Second electrical product</param>
+            <returns>Resulting electrical product</returns>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.op_Subtraction(DataLib.Models.ElectricalProduct,System.Int32)">
+            <summary>
+            Overloaded operator- for electrical product and integer
+            </summary>
+            <param name="ep">Electrical product</param>
+            <param name="value">Value which decrease amount</param>
+            <returns>Resultring electrical product</returns>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.op_Implicit(DataLib.Models.ElectricalProduct)~DataLib.Models.BakeryProduct">
+            <summary>
+            Overloaded implicit operator for casting electrical product to bakery product
+            </summary>
+            <param name="ep">Electrical product</param>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.op_Implicit(DataLib.Models.ElectricalProduct)~System.Int32">
+            <summary>
+            Overloaded implicit operator for casting electrical product to integer
+            </summary>
+            <param name="ep">Electrical product</param>
+        </member>
+        <member name="M:DataLib.Models.ElectricalProduct.op_Implicit(DataLib.Models.ElectricalProduct)~System.Decimal">
+            <summary>
+            Overloaded implicit operator for castring electrical product to decimal
+            </summary>
+            <param name="ep">Electrical product</param>
+        </member>
+        <member name="T:DataLib.Exceptions.DifferentNameException">
+            <summary>
+            Class which represents different name exception
+            </summary>
+        </member>
+        <member name="M:DataLib.Exceptions.DifferentNameException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:DataLib.Exceptions.DifferentNameException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+    </members>
+</doc>

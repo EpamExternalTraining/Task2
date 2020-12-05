@@ -98,3 +98,4 @@ E:\Projects\EpamExternalTraining\Task2\UnitTests\bin\Debug\netcoreapp3.1\Service
 E:\Projects\EpamExternalTraining\Task2\UnitTests\bin\Debug\netcoreapp3.1\DataLib.pdb
 E:\Projects\EpamExternalTraining\Task2\UnitTests\bin\Debug\netcoreapp3.1\DataLib.xml
 E:\Projects\EpamExternalTraining\Task2\UnitTests\bin\Debug\netcoreapp3.1\ServiceLib.pdb
+E:\Projects\EpamExternalTraining\Task2\UnitTests\bin\Debug\netcoreapp3.1\ServiceLib.xml

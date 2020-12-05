@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rqOO1jLhFX3W6mMkOw4F2GBNG4tE7PI8Br76cIpjA/ilrJsYFb4A+M8IoW2o30I6PMAso+OvcX77HlWeV4S8qQ==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\EpamExternalTraining\\Task2\\ServiceLib\\ServiceLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\7nexu\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

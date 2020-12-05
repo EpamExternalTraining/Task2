@@ -66,6 +66,7 @@ namespace DataLib.Models
         /// <returns>Unit cost</returns>
         public decimal GetUnitCost()
         {
+            if (Markup == 0) return Price;
             return Price * (1 + (100 / Markup));
         }
 

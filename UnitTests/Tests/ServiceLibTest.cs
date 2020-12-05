@@ -1,33 +1,44 @@
 ﻿using DataLib.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using ServiceLib.Interfaces;
-using ServiceLib.Services;
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using UnitTests.Resources;
 
 namespace UnitTests.Tests
 {
+
     [TestClass]
     public class ServiceLibTest
     {
-        private static readonly string _filePath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "Resources", "products.txt");
-        private static readonly IRepository<Product> _repository = new ProductJSONRepository(_filePath);
 
-        [TestMethod]
-        public void TestMethod1()
+        #region Resources
+
+        private static IRepository<Product> _repository => TestResources.Repository;
+        private static IEnumerable<object[]> _products => TestResources.Products;
+
+        #endregion
+
+        #region Tests
+
+        [Description("Saves products and loades them for correct Save/Load methods")]
+        [DynamicData(nameof(_products))]
+        [DataTestMethod]
+        public void SavingProductsAndLoadingThemFor_CorrectSaveingLoading(params Product[] products)
         {
-            Product product1 = new BakeryProduct("Хлеб", 1, 1.55m, 10);
-            Product product2 = new ElectricalProduct("Телефон", 2, 1000m, 20);
-
-            List<Product> products = new List<Product> { product1, product2 };
-
             _repository.Save(products);
 
             List<Product> result = _repository.Load().ToList();
-            Assert.IsInstanceOfType(result[0], typeof(BakeryProduct));
+
+            Assert.AreEqual(result.Count, products.Length);
+            for (int i=0; i<result.Count; ++i)
+            {
+                Assert.AreEqual(result[i], products[i]);
+            }
         }
+
+        #endregion
+
     }
+
 }

@@ -1,0 +1,9 @@
+E:\Projects\EpamExternalTraining\Task2\DataLib\bin\Debug\netcoreapp3.1\DataLib.deps.json
+E:\Projects\EpamExternalTraining\Task2\DataLib\bin\Debug\netcoreapp3.1\DataLib.dll
+E:\Projects\EpamExternalTraining\Task2\DataLib\bin\Debug\netcoreapp3.1\DataLib.pdb
+E:\Projects\EpamExternalTraining\Task2\DataLib\bin\Debug\netcoreapp3.1\DataLib.xml
+E:\Projects\EpamExternalTraining\Task2\DataLib\obj\Debug\netcoreapp3.1\DataLib.AssemblyInfoInputs.cache
+E:\Projects\EpamExternalTraining\Task2\DataLib\obj\Debug\netcoreapp3.1\DataLib.AssemblyInfo.cs
+E:\Projects\EpamExternalTraining\Task2\DataLib\obj\Debug\netcoreapp3.1\DataLib.csproj.CoreCompileInputs.cache
+E:\Projects\EpamExternalTraining\Task2\DataLib\obj\Debug\netcoreapp3.1\DataLib.dll
+E:\Projects\EpamExternalTraining\Task2\DataLib\obj\Debug\netcoreapp3.1\DataLib.pdb
