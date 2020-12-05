@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceLib</name>
+    </assembly>
+    <members>
+        <member name="T:ServiceLib.Interfaces.IRepository`1">
+            <summary>
+            Pattern repository
+            </summary>
+            <typeparam name="T">Class that will be stored in this repository</typeparam>
+        </member>
+        <member name="M:ServiceLib.Interfaces.IRepository`1.Save(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Saves IEnumerable of objects
+            </summary>
+            <param name="value">IEnumerable to save</param>
+        </member>
+        <member name="M:ServiceLib.Interfaces.IRepository`1.Load">
+            <summary>
+            Loads IEnumerable of objects
+            </summary>
+            <returns>Loaded IEnumerable of objects</returns>
+        </member>
+        <member name="T:ServiceLib.Services.ProductJSONRepository">
+            <summary>
+            Class which represents JSON repository for products
+            </summary>
+        </member>
+        <member name="M:ServiceLib.Services.ProductJSONRepository.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileName">File name where JSON repository located</param>
+        </member>
+        <member name="M:ServiceLib.Services.ProductJSONRepository.Load">
+            <summary>
+            Loads products
+            </summary>
+            <returns>IEnumerable of products</returns>
+        </member>
+        <member name="M:ServiceLib.Services.ProductJSONRepository.Save(System.Collections.Generic.IEnumerable{DataLib.Models.Product})">
+            <summary>
+            Saves products
+            </summary>
+            <param name="products">IEnumerable of products</param>
+        </member>
+    </members>
+</doc>

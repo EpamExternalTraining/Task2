@@ -15,6 +15,11 @@ namespace DataLib.Models
         /// <summary>
         /// Constructor
         /// </summary>
+        public ElectricalProduct() : base() { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         /// <param name="name">Name of the electrical product</param>
         /// <param name="amount">Amount of the electrical product</param>
         /// <param name="price">Price of the electrical product</param>
@@ -46,7 +51,7 @@ namespace DataLib.Models
         /// <param name="ep">Electrical product</param>
         /// <param name="value">Value which decrease amount</param>
         /// <returns>Resultring electrical product</returns>
-        public static ElectricalProduct operator-(ElectricalProduct ep, int value)
+        public static ElectricalProduct operator -(ElectricalProduct ep, int value)
         {
             return new ElectricalProduct(ep.Name,
                                          (uint)((int)ep.Amount - value),

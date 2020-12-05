@@ -38,11 +38,17 @@ namespace DataLib.Models
         /// <summary>
         /// Constructor
         /// </summary>
+        public Product() { }
+
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         /// <param name="name">Name of the product</param>
         /// <param name="amount">Amount of ther product</param>
         /// <param name="price">Price of the product</param>
         /// <param name="markup">Markup of the product</param>
-        protected Product(string name, uint amount, decimal price, decimal markup)
+        public Product(string name, uint amount, decimal price, decimal markup)
         {
             this.Name = name;
             this.Amount = amount;

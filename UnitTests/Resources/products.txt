@@ -1,0 +1,16 @@
+[
+  {
+    "ProductType": "BakeryProduct",
+    "Name": "Хлеб",
+    "Amount": 1,
+    "Price": 1.55,
+    "Markup": 10.0
+  },
+  {
+    "ProductType": "ElectricalProduct",
+    "Name": "Телефон",
+    "Amount": 2,
+    "Price": 1000.0,
+    "Markup": 20.0
+  }
+]

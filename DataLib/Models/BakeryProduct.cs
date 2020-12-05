@@ -15,6 +15,11 @@ namespace DataLib.Models
         /// <summary>
         /// Constructor
         /// </summary>
+        public BakeryProduct() : base() { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         /// <param name="name">Name of the bakery product</param>
         /// <param name="amount">Amount of the bakery product</param>
         /// <param name="price">Price of the bakery product</param>
@@ -31,7 +36,7 @@ namespace DataLib.Models
         /// <param name="bp1">First bakery product</param>
         /// <param name="bp2">Second bakery product</param>
         /// <returns>Resulting bakery product</returns>
-        public static BakeryProduct operator+(BakeryProduct bp1, BakeryProduct bp2)
+        public static BakeryProduct operator +(BakeryProduct bp1, BakeryProduct bp2)
         {
             if (bp1.Name != bp2.Name) throw new DifferentNameException($"{bp1} hasn`t equal name to {bp2}.");
             return new BakeryProduct(bp1.Name,
